@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Językowi Tropiciele • B1: Akta Sprawy False Friends</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: {
+              900: '#1c1512',
+              800: '#2b1e16',
+              700: '#3d2b1f',
+              600: '#523a2a',
+              500: '#75543d',
+            },
+            parchment: {
+              50: '#fdfbf7',
+              100: '#f7f2e8',
+              200: '#efe6d5',
+              300: '#e3d4be',
+              400: '#d0baa0',
+            },
+            crimson: {
+              700: '#8c271e',
+              800: '#6b1b14',
+            },
+            investigator: {
+              green: '#1b5e20',
+              gold: '#b78103',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            mono: ['"Courier Prime"', 'Courier', 'monospace'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #1c1512;
+      background-image: radial-gradient(#2b1e16 1px, transparent 1px);
+      background-size: 24px 24px;
+      color: #2b1e16;
+    }
+    .file-folder {
+      box-shadow: 0 15px 35px rgba(0,0,0,0.5), 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .stamp-badge {
+      transform: rotate(-2deg);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #efe6d5;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #75543d;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased min-h-screen py-6 px-3 sm:px-6">
+
+  <div class="max-w-5xl mx-auto file-folder bg-parchment-100 rounded-xl border-4 border-noir-700 overflow-hidden relative">
+
+    <!-- FOLDER TOP HEADER -->
+    <header class="bg-noir-800 text-parchment-100 p-6 sm:p-8 border-b-4 border-noir-900 relative">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+          <div class="flex items-center gap-3">
+            <span class="bg-crimson-700 text-parchment-50 font-mono text-xs px-2.5 py-1 rounded font-bold uppercase tracking-wider">
+              JĘZYKOWI TROPICIELE • B1
+            </span>
+            <span class="font-mono text-xs text-parchment-300">AKTA SPRAWY: FALSE FRIENDS</span>
+          </div>
+          <h1 class="font-serif text-2xl sm:text-4xl font-extrabold text-parchment-50 mt-2 tracking-tight">
+            DETEKTYW KRUK: FALSE FRIENDS
+          </h1>
+          <p class="font-mono text-xs sm:text-sm text-parchment-300 mt-1">
+            Wypis pułapek językowych — Interaktywne Akta Śledcze
+          </p>
+        </div>
+
+        <!-- STAMP & SCORE DISPLAY -->
+        <div class="flex flex-col items-end gap-2 w-full md:w-auto">
+          <div class="stamp-badge bg-parchment-50 border-2 border-dashed border-crimson-700 text-crimson-700 px-4 py-2 font-mono font-bold text-center w-full md:w-auto shadow-md">
+            <div class="text-xs uppercase tracking-widest">ŚCIŚLE TAJNE</div>
+            <div id="score-display" class="text-xl font-black">0 / 30 PKT</div>
+            <div id="rank-display" class="text-[10px] text-noir-600 font-sans">Kadet Śledczy</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN DOSSIER CONTENT -->
+    <main class="p-4 sm:p-8 space-y-10">
+
+      <!-- INSTRUCTION BOX -->
+      <section class="bg-parchment-200 border-l-4 border-crimson-700 p-4 rounded-r-lg font-mono text-xs sm:text-sm text-noir-800 leading-relaxed shadow-sm">
+        <div class="font-bold uppercase text-crimson-700 mb-1 flex items-center gap-2">
+          <span>🔍 NOTATKA ŚLEDCZA:</span>
+        </div>
+        <p>
+          <em>False Friends</em> (Fałszywi Przyjaciele) wyglądają niemal identycznie jak polskie słowa, ale mają zupełnie inne znaczenie. Przeanalizuj poniższe tabele i nie daj się wprowadzić w błąd podczas przesłuchań!
+        </p>
+      </section>
+
+      <!-- SECTION 1: VOCABULARY DOSSIER TABLES -->
+      <section class="space-y-6">
+        <div class="flex items-center justify-between border-b-2 border-noir-700 pb-2">
+          <h2 class="font-serif text-xl sm:text-2xl font-bold text-noir-900 flex items-center gap-2">
+            <span>📁 SEKCJA 1:</span> Baza Dowodów (Słownik B1)
+          </h2>
+          <span class="font-mono text-xs bg-noir-700 text-parchment-100 px-2 py-1 rounded">Ściśle Tajne</span>
+        </div>
+
+        <!-- TABLE 1 -->
+        <div>
+          <h3 class="font-mono text-xs font-bold text-crimson-700 uppercase tracking-wider mb-2">KATEGORIA 1: DOM, JEDZENIE & PRZEDMIOTY</h3>
+          <div class="overflow-x-auto custom-scrollbar rounded-lg border border-noir-600 shadow-sm">
+            <table class="w-full text-left text-xs sm:text-sm font-sans bg-parchment-50">
+              <thead class="bg-noir-700 text-parchment-100 font-serif border-b border-noir-800">
+                <tr>
+                  <th class="p-2.5 border border-noir-800 w-1/4">Podejrzane Słowo</th>
+                  <th class="p-2.5 border border-noir-800 w-1/4">Fałszywy Trop</th>
+                  <th class="p-2.5 border border-noir-800 w-1/4">Prawdziwa Tożsamość</th>
+                  <th class="p-2.5 border border-noir-800 w-1/4">Angielski odpowiednik dla fałszywego tropu</th>
+                </tr>
+              </thead>
+              <tbody id="table-cat-1" class="divide-y divide-parchment-300 font-mono text-noir-900"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TABLE 2 -->
+        <div>
+          <h3 class="font-mono text-xs font-bold text-crimson-700 uppercase tracking-wider mb-2">KATEGORIA 2: EDUKACJA, PRACA & BIZNES</h3>
+          <div class="overflow-x-auto custom-scrollbar rounded-lg border border-noir-600 shadow-sm">
+            <table class="w-full text-left text-xs sm:text-sm font-sans bg-parchment-50">
+              <thead class="bg-noir-700 text-parchment-100 font-serif border-b border-noir-800">
+                <tr>
+                  <th class="p-2.5 border border-noir-800 w-1/4">Podejrzane Słowo</th>
+                  <th class="p-2.5 border border-noir-800 w-1/4">Fałszywy Trop</th>
+                  <th class="p-2.5 border border-noir-800 w-1/4">Prawdziwa Tożsamość</th>
+                  <th class="p-2.5 border border-noir-800 w-1/4">Angielski odpowiednik dla fałszywego tropu</th>
+                </tr>
+              </thead>
+              <tbody id="table-cat-2" class="divide-y divide-parchment-300 font-mono text-noir-900"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TABLE 3 -->
+        <div>
+          <h3 class="font-mono text-xs font-bold text-crimson-700 uppercase tracking-wider mb-2">KATEGORIA 3: CECHY, LUDZIE & POJĘCIA OGÓLNE</h3>
+          <div class="overflow-x-auto custom-scrollbar rounded-lg border border-noir-600 shadow-sm">
+            <table class="w-full text-left text-xs sm:text-sm font-sans bg-parchment-50">
+              <thead class="bg-noir-700 text-parchment-100 font-serif border-b border-noir-800">
+                <tr>
+                  <th class="p-2.5 border border-noir-800 w-1/4">Podejrzane Słowo</th>
+                  <th class="p-2.5 border border-noir-800 w-1/4">Fałszywy Trop</th>
+                  <th class="p-2.5 border border-noir-800 w-1/4">Prawdziwa Tożsamość</th>
+                  <th class="p-2.5 border border-noir-800 w-1/4">Angielski odpowiednik dla fałszywego tropu</th>
+                </tr>
+              </thead>
+              <tbody id="table-cat-3" class="divide-y divide-parchment-300 font-mono text-noir-900"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: WITNESS INTERROGATIONS -->
+      <section>
+        <div class="flex items-center justify-between mb-4 border-b-2 border-noir-700 pb-2">
+          <h2 class="font-serif text-xl sm:text-2xl font-bold text-noir-900 flex items-center gap-2">
+            <span>🎙️ SEKCJA 2:</span> PRZESŁUCHANIE ŚWIADKÓW: „KTO TU KŁAMIE?”
+          </h2>
+          <span class="font-mono text-xs text-noir-600">11 Świadków</span>
+        </div>
+
+        <p class="font-mono text-xs text-noir-700 mb-4">
+          Oceń każde z 11 zeznań: wybierz [ ] PRAWDZIWE ALIBI lub [ ] FAŁSZYWE ALIBI. Jeśli wskazujesz FAŁSZYWE ALIBI, wpisz w polu tekstowym poprawne słowo!
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="interrogations-container">
+          <!-- Rendered via JS -->
+        </div>
+      </section>
+
+      <!-- SECTION 3: EVIDENCE ANALYSIS (INTERCEPTED LETTERS) -->
+      <section>
+        <div class="flex items-center justify-between mb-4 border-b-2 border-noir-700 pb-2">
+          <h2 class="font-serif text-xl sm:text-2xl font-bold text-noir-900 flex items-center gap-2">
+            <span>✉️ SEKCJA 3:</span> ANALIZA DOWODÓW RZECZOWYCH (PRZECHWYCONE LISTY)
+          </h2>
+          <span class="font-mono text-xs text-noir-600">3 Dowody Rzeczowe</span>
+        </div>
+
+        <div class="space-y-6" id="evidence-container">
+          <!-- Rendered via JS -->
+        </div>
+      </section>
+
+      <!-- SECTION 4: INVESTIGATIVE MISSIONS (GAP FILLING & TRANSLATION) -->
+      <section>
+        <div class="flex items-center justify-between mb-4 border-b-2 border-noir-700 pb-2">
+          <h2 class="font-serif text-xl sm:text-2xl font-bold text-noir-900 flex items-center gap-2">
+            <span>🎯 SEKCJA 4:</span> MISJE ŚLEDCZE (ZADANIA UZUPEŁNIAJĄCE)
+          </h2>
+          <span class="font-mono text-xs text-noir-600">10 Misji E8</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="missions-container">
+          <!-- Rendered via JS -->
+        </div>
+      </section>
+
+      <!-- CONTROL BUTTONS -->
+      <section class="pt-6 border-t-2 border-noir-700 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <button id="btn-check" onclick="checkAnswers()" class="w-full sm:w-auto bg-crimson-700 hover:bg-crimson-800 text-parchment-50 font-serif font-bold py-3.5 px-8 rounded-lg shadow-lg border-2 border-noir-900 transition flex items-center justify-center gap-2 text-base">
+          <span>🔍</span> ZWERYFIKUJ PROTOKÓŁ ŚLEDCZY
+        </button>
+        <button id="btn-key" onclick="toggleAnswerKey()" class="w-full sm:w-auto bg-noir-700 hover:bg-noir-800 text-parchment-100 font-mono text-xs py-3.5 px-6 rounded-lg border border-noir-900 transition flex items-center justify-center gap-2">
+          <span>🔑</span> <span id="key-toggle-text">POKAŻ KLUCZ ŚLEDCZY</span>
+        </button>
+      </section>
+
+      <!-- FEEDBACK RESULT BANNER -->
+      <div id="result-banner" class="hidden bg-parchment-50 border-2 border-noir-700 p-6 rounded-xl shadow-xl text-center space-y-3">
+        <h3 id="result-title" class="font-serif text-2xl font-bold text-noir-900"></h3>
+        <p id="result-desc" class="font-mono text-sm text-noir-700"></p>
+        <div class="pt-2">
+          <span id="result-score" class="inline-block bg-crimson-700 text-parchment-50 font-mono font-bold px-4 py-2 rounded-lg text-lg"></span>
+        </div>
+      </div>
+
+      <!-- SECTION 5: ANSWER KEY (COLLAPSIBLE) -->
+      <section id="answer-key-section" class="hidden pt-6 border-t-2 border-dashed border-noir-600">
+        <div class="bg-parchment-200 border border-noir-600 p-6 rounded-lg space-y-4">
+          <div class="flex justify-between items-center border-b border-noir-500 pb-2">
+            <h3 class="font-serif text-lg font-bold text-noir-900">🔓 KARTA ODPOWIEDZI: KLUCZ ŚLEDCZY DETEKTYWA KRUKA</h3>
+            <span class="font-mono text-xs bg-investigator-green text-parchment-50 px-2 py-0.5 rounded">Poufne</span>
+          </div>
+          
+          <div class="space-y-4 font-mono text-xs text-noir-800">
+            <div>
+              <h4 class="font-bold underline mb-1">1. Przesłuchanie Świadków — Rozwiązania:</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1">
+                <p>#1 Nowak: <strong>FAŁSZYWE ALIBI</strong> ➔ toothpaste</p>
+                <p>#2 Kowalski: <strong>PRAWDZIWE ALIBI</strong> (chef = szef kuchni)</p>
+                <p>#3 Wiśniewska: <strong>FAŁSZYWE ALIBI</strong> ➔ receipt</p>
+                <p>#4 Zieliński: <strong>FAŁSZYWE ALIBI</strong> ➔ Currently / Right now</p>
+                <p>#5 Wójcik: <strong>FAŁSZYWE ALIBI</strong> ➔ take an exam</p>
+                <p>#6 Majewski: <strong>FAŁSZYWE ALIBI</strong> ➔ notebook</p>
+                <p>#7 Kamiński: <strong>PRAWDZIWE ALIBI</strong> (rover = łazik)</p>
+                <p>#8 Lewandowski: <strong>FAŁSZYWE ALIBI</strong> ➔ candy bar / chocolate bar</p>
+                <p>#9 Kozłowski: <strong>PRAWDZIWE ALIBI</strong> (promotion = promocja)</p>
+                <p>#10 Dąbrowska: <strong>PRAWDZIWE ALIBI</strong> (closet = szafa)</p>
+                <p>#11 Mazur: <strong>FAŁSZYWE ALIBI</strong> ➔ code</p>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="font-bold underline mb-1">2. Analiza Dowodów Rzeczowych (Listy):</h4>
+              <p><strong>Dowód #1:</strong> 1. boss / manager | 2. candy bar / chocolate bar | 3. currently / right now</p>
+              <p><strong>Dowód #2:</strong> 1. bike / bicycle | 2. nice / friendly | 3. special offer / discount</p>
+              <p><strong>Dowód #3:</strong> 1. crime novel / detective book | 2. cartoon | 3. prescription</p>
+            </div>
+
+            <div>
+              <h4 class="font-bold underline mb-1">3. Misje Śledcze (Zadania Uzupełniające):</h4>
+              <div class="grid grid-cols-2 sm:grid-cols-5 gap-2">
+                <p>M1: <strong>take</strong></p>
+                <p>M2: <strong>date</strong></p>
+                <p>M3: <strong>receipt</strong></p>
+                <p>M4: <strong>Actually / In fact</strong></p>
+                <p>M5: <strong>gymnasium</strong></p>
+                <p>M6: <strong>promotion</strong></p>
+                <p>M7: <strong>carton</strong></p>
+                <p>M8: <strong>sympathetic</strong></p>
+                <p>M9: <strong>rover</strong></p>
+                <p>M10: <strong>billion</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-noir-900 text-parchment-400 p-4 font-mono text-xs text-center border-t border-noir-700">
+      <p>© Językowi Tropiciele • Detektyw Kruk • Wypis pułapek językowych False Friends (B1)</p>
+    </footer>
+
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // COMPLETE DATA MATCHING 100% OF PDF CONTENT
+
+    const vocabCategory1 = [
+      { word: "Chef", fake: "Szef w biurze", trueVal: "Szef kuchni / mistrz kucharz", right: "boss / manager" },
+      { word: "Cooker", fake: "Kucharz", trueVal: "Kuchenka (urządzenie AGD)", right: "cook / chef" },
+      { word: "Receipt", fake: "Recepta od lekarza", trueVal: "Paragon ze sklepu", right: "prescription" },
+      { word: "Recipe", fake: "Recepta od lekarza", trueVal: "Przepis kulinarny", right: "prescription" },
+      { word: "Closet", fake: "Klozet / toaleta", trueVal: "Szafa ścienna / garderoba", right: "toilet / WC" },
+      { word: "Olive", fake: "Oliwa do smażenia", trueVal: "Oliwka (owoc)", right: "olive oil" },
+      { word: "Pasta", fake: "Pasta do zębów", trueVal: "Makaron włoski", right: "toothpaste" },
+      { word: "Dress", fake: "Dres sportowy", trueVal: "Sukienka / suknia", right: "tracksuit / sweatpants" },
+      { word: "Baton", fake: "Baton słodki", trueVal: "Pałka policyjna / sztafetowa", right: "candy bar / chocolate bar" },
+      { word: "Cartoon / Carton", fake: "Karton = kreskówka", trueVal: "Cartoon = kreskówka / Carton = karton", right: "carton of milk / cartoon" },
+      { word: "Cod / Code", fake: "Cod = kod", trueVal: "Cod = dorsz / Code = kod / szyfr", right: "cod (ryba) / secret code" }
+    ];
+
+    const vocabCategory2 = [
+      { word: "Pass (an exam)", fake: "Pisać / przystąpić", trueVal: "ZDAĆ egzamin (z sukcesem)", right: "take an exam" },
+      { word: "Data vs. Date", fake: "Data w kalendarzu", trueVal: "Data = dane / Date = data w kalendarzu", right: "date (kalendarz) / data" },
+      { word: "Colleague", fake: "Kolega ze szkoły", trueVal: "Współpracownik z pracy", right: "classmate / friend" },
+      { word: "Director", fake: "Dyrektor szkoły", trueVal: "Reżyser filmowy (lub dyrektor)", right: "headteacher / principal" },
+      { word: "Conductor", fake: "Konduktor w pociągu", trueVal: "Dyrygent orkiestry", right: "ticket inspector" },
+      { word: "Promotion", fake: "Promocja w sklepie", trueVal: "Awans w pracy / promocja marki", right: "special offer / discount" },
+      { word: "Pension", fake: "Pensja co miesiąc", trueVal: "Emerytura lub renta", right: "salary / wage" }
+    ];
+
+    const vocabCategory3 = [
+      { word: "Actually", fake: "Aktualnie (w tej chwili)", trueVal: "W rzeczywistości / właściwie", right: "currently / at present" },
+      { word: "Eventually", fake: "Ewentualnie", trueVal: "W końcu / ostatecznie", right: "possibly / if necessary" },
+      { word: "Sympathetic", fake: "Sympatyczny / miły", trueVal: "Pełen współczucia / wyrozumiały", right: "nice / friendly" },
+      { word: "Local", fake: "Lokal (klub / restauracja)", trueVal: "Lokalny / miejscowy (osoba)", right: "venue / place / restaurant" },
+      { word: "Billion", fake: "Polski bilion", trueVal: "Miliard (1 000 000 000)", right: "trillion" },
+      { word: "Rover", fake: "Rower do jazdy", trueVal: "Łazik badawczy / wędrowiec", right: "bicycle / bike" },
+      { word: "Magazine", fake: "Magazyn (budynek)", trueVal: "Czasopismo / gazeta", right: "warehouse / storehouse" },
+      { word: "Order", fake: "Order (odznaczenie)", trueVal: "Zamówienie / rozkaz / porządek", right: "medal / award" },
+      { word: "Criminal", fake: "Kryminał (książka)", trueVal: "Przestępca", right: "crime novel / detective book" },
+      { word: "Gymnasium", fake: "Gimnazjum (szkoła)", trueVal: "Sala gimnastyczna / siłownia", right: "secondary school" }
+    ];
+
+    const interrogationsData = [
+      { id: 'int1', num: '#1', witness: 'Świadek A. Nowak', case: 'Pastylka zębowa', text: '"I went to the bathroom and used a tube of delicious pasta to brush my teeth."', correctType: 'false', correctWords: ['toothpaste'] },
+      { id: 'int2', num: '#2', witness: 'Świadek B. Kowalski', case: 'Restauracja francuska', text: '"My uncle is a famous chef in a top French restaurant in London."', correctType: 'true', correctWords: [] },
+      { id: 'int3', num: '#3', witness: 'Świadek C. Wiśniewska', case: 'Sklep ze spodniami', text: '"I forgot my prescription, so the cashier couldn\'t refund money for my shoes."', correctType: 'false', correctWords: ['receipt'] },
+      { id: 'int4', num: '#4', witness: 'Świadek D. Zieliński', case: 'Nauka na jutro', text: '"Actually, I am writing my homework right now, so please do not call me."', correctType: 'false', correctWords: ['currently', 'right now'] },
+      { id: 'int5', num: '#5', witness: 'Świadek E. Wójcik', case: 'Wyniki egzaminu', text: '"I couldn\'t sleep yesterday because I had to pass a very difficult exam."', correctType: 'false', correctWords: ['take', 'take an exam'] },
+      { id: 'int6', num: '#6', witness: 'Świadek F. Majewski', case: 'Zeszyt szkolny', text: '"I left my note at school, so I don\'t have anything to write my homework in."', correctType: 'false', correctWords: ['notebook'] },
+      { id: 'int7', num: '#7', witness: 'Świadek G. Kamiński', case: 'Podróż kosmiczna', text: '"Scientists confirmed that NASA sent a new rover to explore Mars."', correctType: 'true', correctWords: [] },
+      { id: 'int8', num: '#8', witness: 'Świadek H. Lewandowski', case: 'Słodka przekąska', text: '"He bought a delicious chocolate baton at the petrol station counter."', correctType: 'false', correctWords: ['candy bar', 'chocolate bar', 'bar'] },
+      { id: 'int9', num: '#9', witness: 'Świadek I. Kozłowski', case: 'Promocja w sklepie', text: '"There is a big promotion on jackets in the new shop near my house."', correctType: 'true', correctWords: [] },
+      { id: 'int10', num: '#10', witness: 'Świadek J. Dąbrowska', case: 'Szafa ubraniowa', text: '"She opened the closet to choose a nice dress for the evening party."', correctType: 'true', correctWords: [] },
+      { id: 'int11', num: '#11', witness: 'Świadek K. Mazur', case: 'Szyfr dowódcy', text: '"The secret agent tried to break the security cod before midnight."', correctType: 'false', correctWords: ['code'] }
+    ];
+
+    const evidenceData = [
+      {
+        id: 'ev1',
+        title: 'DOWÓD RZECZOWY #1 — LIST PODEJRZANEGO „A”',
+        content: '"Dear Agent, I am currently at home. My uncle is a famous chef in a big bank. Yesterday I bought a delicious chocolate baton at the station. Please send me the file, actually I need it right now because I\'m busy."',
+        traps: ['chef', 'baton', 'actually'],
+        answers: [
+          ['boss', 'manager'],
+          ['candy bar', 'chocolate bar', 'bar'],
+          ['currently', 'right now', 'at present']
+        ]
+      },
+      {
+        id: 'ev2',
+        title: 'DOWÓD RZECZOWY #2 — PRZECHWYCONA DEPESZA „B”',
+        content: '"Agent Kruk! I rode my new rover to the office today. My boss is very sympathetic and gave me a big promotion on shoes in the shop."',
+        traps: ['rover', 'sympathetic', 'promotion'],
+        answers: [
+          ['bike', 'bicycle'],
+          ['nice', 'friendly'],
+          ['special offer', 'discount', 'sale']
+        ]
+      },
+      {
+        id: 'ev3',
+        title: 'DOWÓD RZECZOWY #3 — TAJNA NOTATKA „C”',
+        content: '"I read an interesting criminal yesterday while listening to music. Then I went to the store to buy a carton of action film, but I forgot my doctor\'s recipe."',
+        traps: ['criminal', 'carton', 'recipe'],
+        answers: [
+          ['crime novel', 'detective book', 'book'],
+          ['cartoon'],
+          ['prescription']
+        ]
+      }
+    ];
+
+    const missionsData = [
+      { id: 'm1', title: 'MISJA 1', text: 'I had to (pass / take) an English test yesterday, but results will be next week.', type: 'select', options: ['pass', 'take'], correct: 'take' },
+      { id: 'm2', title: 'MISJA 2', text: 'What is today\'s (data w kalendarzu) _______?', type: 'input', correct: 'date' },
+      { id: 'm3', title: 'MISJA 3', text: 'Keep the _______ in case you want to return the jacket to the shop.', type: 'input', correct: 'receipt' },
+      { id: 'm4', title: 'MISJA 4', text: '(W rzeczywistości / Naprawdę) _______, I have already done all my homework.', type: 'input', correct: 'actually' },
+      { id: 'm5', title: 'MISJA 5', text: 'My brother spent two hours in the (gymnasium / closet) playing basketball.', type: 'select', options: ['gymnasium', 'closet'], correct: 'gymnasium' },
+      { id: 'm6', title: 'MISJA 6', text: 'After five years of hard work, she finally got a (awans w pracy) _______.', type: 'input', correct: 'promotion' },
+      { id: 'm7', title: 'MISJA 7', text: 'Every morning we buy a (carton / cartoon / cod) of fresh milk.', type: 'select', options: ['carton', 'cartoon', 'cod'], correct: 'carton' },
+      { id: 'm8', title: 'MISJA 8', text: 'The doctor was very (pełen współczucia / wyrozumiały) _______ towards the patient.', type: 'input', correct: 'sympathetic' },
+      { id: 'm9', title: 'MISJA 9', text: 'The space agency built an advanced _______ to collect rock samples on Mars.', type: 'input', correct: 'rover' },
+      { id: 'm10', title: 'MISJA 10', text: 'The total cost of building the new bridge was over one (miliard) _______ dollars.', type: 'input', correct: 'billion' }
+    ];
+
+    // RENDER FUNCTIONS
+
+    function renderVocabTable(tableId, data) {
+      const tbody = document.getElementById(tableId);
+      tbody.innerHTML = data.map(item => `
+        <tr class="hover:bg-parchment-200 transition">
+          <td class="p-2.5 font-bold text-crimson-700 border border-parchment-300">${item.word}</td>
+          <td class="p-2.5 text-red-900 border border-parchment-300">${item.fake}</td>
+          <td class="p-2.5 border border-parchment-300">${item.trueVal}</td>
+          <td class="p-2.5 font-bold text-investigator-green border border-parchment-300">${item.right}</td>
+        </tr>
+      `).join('');
+    }
+
+    function renderInterrogations() {
+      const container = document.getElementById('interrogations-container');
+      container.innerHTML = interrogationsData.map(item => `
+        <div class="bg-parchment-50 border border-noir-500 rounded-lg p-3.5 space-y-2.5 shadow-sm hover:border-noir-700 transition" id="card-${item.id}">
+          <div class="flex justify-between items-center border-b border-parchment-300 pb-1">
+            <span class="font-mono text-xs font-bold text-crimson-700">Zeznanie ${item.num} — ${item.witness}</span>
+            <span class="text-[11px] bg-parchment-200 text-noir-700 font-mono px-2 py-0.5 rounded">Sprawa: ${item.case}</span>
+          </div>
+          <p class="font-serif italic text-xs sm:text-sm text-noir-900 bg-parchment-200 p-2 rounded border border-parchment-300">
+            ${item.text}
+          </p>
+          <div class="space-y-2 pt-1">
+            <div class="flex items-center gap-4 font-mono text-xs">
+              <label class="flex items-center gap-1.5 cursor-pointer">
+                <input type="radio" name="radio-${item.id}" value="true" class="text-crimson-700 focus:ring-crimson-700">
+                <span>[ ] PRAWDZIWE ALIBI</span>
+              </label>
+              <label class="flex items-center gap-1.5 cursor-pointer">
+                <input type="radio" name="radio-${item.id}" value="false" class="text-crimson-700 focus:ring-crimson-700">
+                <span>[ ] FAŁSZYWE ALIBI</span>
+              </label>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="font-mono text-xs text-noir-600 shrink-0">Poprawne słowo:</span>
+              <input type="text" id="input-${item.id}" placeholder="Wpisz słowo po angielsku..." class="bg-parchment-100 border border-noir-500 rounded px-2 py-1 text-xs font-mono w-full focus:outline-none focus:border-crimson-700">
+            </div>
+          </div>
+          <div id="feedback-${item.id}" class="hidden font-mono text-xs pt-1"></div>
+        </div>
+      `).join('');
+    }
+
+    function renderEvidence() {
+      const container = document.getElementById('evidence-container');
+      container.innerHTML = evidenceData.map(item => `
+        <div class="bg-parchment-200 border-2 border-noir-600 rounded-lg p-4 space-y-3" id="card-${item.id}">
+          <div class="flex justify-between items-center border-b border-noir-400 pb-2">
+            <h4 class="font-mono text-xs font-bold text-crimson-700 uppercase tracking-wide">${item.title}</h4>
+            <span class="font-mono text-[11px] text-noir-600">Popraw 3 fałszywe tropy</span>
+          </div>
+          <div class="bg-parchment-50 p-3 rounded border border-parchment-400 font-serif italic text-xs sm:text-sm text-noir-900 leading-relaxed">
+            ${item.content}
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 font-mono text-xs">
+            ${item.traps.map((trap, tIdx) => `
+              <div class="space-y-1">
+                <label class="text-[11px] text-noir-600 block">Słowo #${tIdx + 1} (zamiast ${trap}):</label>
+                <input type="text" id="input-${item.id}-${tIdx}" placeholder="Wpisz poprawne słowo..." class="w-full bg-parchment-50 border border-noir-500 rounded px-2.5 py-1.5 focus:outline-none focus:border-crimson-700">
+              </div>
+            `).join('')}
+          </div>
+          <div id="feedback-${item.id}" class="hidden font-mono text-xs pt-1"></div>
+        </div>
+      `).join('');
+    }
+
+    function renderMissions() {
+      const container = document.getElementById('missions-container');
+      container.innerHTML = missionsData.map(item => {
+        let inputField = '';
+        if (item.type === 'select') {
+          inputField = `
+            <select id="input-${item.id}" class="w-full bg-parchment-100 border border-noir-500 rounded px-2.5 py-1 text-xs font-mono focus:outline-none focus:border-crimson-700">
+              <option value="">-- Wybierz słowo --</option>
+              ${item.options.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
+            </select>
+          `;
+        } else {
+          inputField = `
+            <input type="text" id="input-${item.id}" placeholder="Wpisz angielskie słowo..." class="w-full bg-parchment-100 border border-noir-500 rounded px-2.5 py-1 text-xs font-mono focus:outline-none focus:border-crimson-700">
+          `;
+        }
+
+        return `
+          <div class="bg-parchment-50 border border-noir-500 rounded-lg p-3.5 space-y-2" id="card-${item.id}">
+            <div class="flex justify-between items-center">
+              <span class="font-mono text-xs font-bold text-crimson-700">${item.title}</span>
+            </div>
+            <p class="font-mono text-xs text-noir-900">${item.text}</p>
+            <div class="pt-1">
+              ${inputField}
+            </div>
+            <div id="feedback-${item.id}" class="hidden font-mono text-xs pt-1"></div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // CHECK ANSWERS LOGIC
+
+    function checkAnswers() {
+      let totalScore = 0;
+      const maxScore = 30; // 11 (interrogations) + 9 (evidence) + 10 (missions)
+
+      // 1. Interrogations (11 pts)
+      interrogationsData.forEach(item => {
+        const card = document.getElementById(`card-${item.id}`);
+        const feedback = document.getElementById(`feedback-${item.id}`);
+        const selectedRadio = document.querySelector(`input[name="radio-${item.id}"]:checked`);
+        const userWord = document.getElementById(`input-${item.id}`).value.trim().toLowerCase();
+
+        let isCorrect = false;
+
+        if (selectedRadio) {
+          if (item.correctType === 'true' && selectedRadio.value === 'true') {
+            isCorrect = true;
+          } else if (item.correctType === 'false' && selectedRadio.value === 'false') {
+            if (item.correctWords.some(w => w.toLowerCase() === userWord)) {
+              isCorrect = true;
+            }
+          }
+        }
+
+        feedback.classList.remove('hidden', 'text-investigator-green', 'text-crimson-700');
+
+        if (isCorrect) {
+          totalScore += 1;
+          card.className = "bg-green-50 border-2 border-investigator-green rounded-lg p-3.5 space-y-2.5 transition";
+          feedback.classList.add('text-investigator-green');
+          feedback.innerHTML = "✓ Zeznanie zweryfikowane poprawnie!";
+        } else {
+          card.className = "bg-red-50 border-2 border-crimson-700 rounded-lg p-3.5 space-y-2.5 transition";
+          feedback.classList.add('text-crimson-700');
+          feedback.innerHTML = `✗ Ocena: ${item.correctType === 'true' ? 'Prawdziwe Alibi' : 'Fałszywe Alibi'}${item.correctType === 'false' ? ' (Poprawka: ' + item.correctWords.join(' / ') + ')' : ''}.`;
+        }
+      });
+
+      // 2. Evidence (9 pts)
+      evidenceData.forEach(item => {
+        const card = document.getElementById(`card-${item.id}`);
+        const feedback = document.getElementById(`feedback-${item.id}`);
+        let correctCount = 0;
+
+        item.traps.forEach((trap, tIdx) => {
+          const input = document.getElementById(`input-${item.id}-${tIdx}`);
+          const val = input.value.trim().toLowerCase();
+          const validAnswers = item.answers[tIdx].map(a => a.toLowerCase());
+
+          if (validAnswers.includes(val)) {
+            correctCount++;
+            input.className = "w-full bg-green-50 border-2 border-investigator-green rounded px-2.5 py-1.5 focus:outline-none font-bold text-investigator-green";
+          } else {
+            input.className = "w-full bg-red-50 border-2 border-crimson-700 rounded px-2.5 py-1.5 focus:outline-none font-bold text-crimson-700";
+          }
+        });
+
+        totalScore += correctCount;
+        feedback.classList.remove('hidden', 'text-investigator-green', 'text-crimson-700');
+        if (correctCount === 3) {
+          card.className = "bg-green-50 border-2 border-investigator-green rounded-lg p-4 space-y-3";
+          feedback.classList.add('text-investigator-green');
+          feedback.innerHTML = "✓ Rozszyfrowano 3/3 fałszywe tropy w tym dowodzie!";
+        } else {
+          card.className = "bg-red-50 border-2 border-crimson-700 rounded-lg p-4 space-y-3";
+          feedback.classList.add('text-crimson-700');
+          feedback.innerHTML = `Wykryto ${correctCount} z 3 fałszywych tropów w tym dowodzie.`;
+        }
+      });
+
+      // 3. Missions (10 pts)
+      missionsData.forEach(item => {
+        const card = document.getElementById(`card-${item.id}`);
+        const feedback = document.getElementById(`feedback-${item.id}`);
+        const input = document.getElementById(`input-${item.id}`);
+        const userVal = input.value.trim().toLowerCase();
+        const expectedVal = item.correct.toLowerCase();
+
+        feedback.classList.remove('hidden', 'text-investigator-green', 'text-crimson-700');
+
+        if (userVal === expectedVal || (item.id === 'm4' && (userVal === 'actually' || userVal === 'in fact'))) {
+          totalScore += 1;
+          card.className = "bg-green-50 border-2 border-investigator-green rounded-lg p-3.5 space-y-2";
+          feedback.classList.add('text-investigator-green');
+          feedback.innerHTML = "✓ Odpowiedź poprawna!";
+        } else {
+          card.className = "bg-red-50 border-2 border-crimson-700 rounded-lg p-3.5 space-y-2";
+          feedback.classList.add('text-crimson-700');
+          feedback.innerHTML = `✗ Poprawna odpowiedź: <strong>${item.correct}</strong>`;
+        }
+      });
+
+      // UPDATE SCORE & RANK
+      const scoreDisplay = document.getElementById('score-display');
+      const rankDisplay = document.getElementById('rank-display');
+      scoreDisplay.innerText = `${totalScore} / ${maxScore} PKT`;
+
+      let rank = "Kadet Śledczy";
+      if (totalScore >= 27) rank = "🥇 Mistrz Śledczy (Detektyw Kruk)";
+      else if (totalScore >= 20) rank = "🥈 Starszy Detektyw";
+      else if (totalScore >= 12) rank = "🥉 Młodszy Wywiadowca";
+
+      rankDisplay.innerText = rank;
+
+      // SHOW RESULT BANNER
+      const banner = document.getElementById('result-banner');
+      const resTitle = document.getElementById('result-title');
+      const resDesc = document.getElementById('result-desc');
+      const resScore = document.getElementById('result-score');
+
+      banner.classList.remove('hidden');
+      resScore.innerText = `Wynik: ${totalScore} / ${maxScore} PKT (${Math.round((totalScore/maxScore)*100)}%)`;
+
+      if (totalScore === maxScore) {
+        resTitle.innerText = "🏆 PERFEKCYJNIE ZWERYFIKOWANE AKTA!";
+        resTitle.className = "font-serif text-2xl font-bold text-investigator-green";
+        resDesc.innerText = "Świetna robota! Żaden fałszywy trop nie zdołał Cię zmylić. Detektyw Kruk przyznaje Ci tytuł Mistrza Śledczego!";
+      } else if (totalScore >= 20) {
+        resTitle.innerText = "🔍 ZDEMASKOWANO WIĘKSZOŚĆ PUŁAPEK!";
+        resTitle.className = "font-serif text-2xl font-bold text-noir-900";
+        resDesc.innerText = "Bardzo dobry wynik! Przejrzyj Klucz Śledczy, aby poprawić pojedyncze błędy.";
+      } else {
+        resTitle.innerText = "⚠️ PODEJRZANE BŁĘDY W AKTACH";
+        resTitle.className = "font-serif text-2xl font-bold text-crimson-700";
+        resDesc.innerText = "Kilka fałszywych tropów wprowadziło Cię w błąd. Powtórz słówka w Sekcji 1 i spróbuj ponownie!";
+      }
+
+      banner.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function toggleAnswerKey() {
+      const section = document.getElementById('answer-key-section');
+      const toggleText = document.getElementById('key-toggle-text');
+      
+      if (section.classList.contains('hidden')) {
+        section.classList.remove('hidden');
+        toggleText.innerText = "UKRYJ KLUCZ ŚLEDCZY";
+        section.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        section.classList.add('hidden');
+        toggleText.innerText = "POKAŻ KLUCZ ŚLEDCZY";
+      }
+    }
+
+    // INITIALIZE ON LOAD
+    window.onload = function() {
+      renderVocabTable('table-cat-1', vocabCategory1);
+      renderVocabTable('table-cat-2', vocabCategory2);
+      renderVocabTable('table-cat-3', vocabCategory3);
+      renderInterrogations();
+      renderEvidence();
+      renderMissions();
+    };
+  </script>
+</body>
+</html>
